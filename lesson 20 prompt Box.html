@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript page</title>
+</head>
+<body>
+	<h2>Prompt Box</h2>
+	<p>as ko hum user sa kohi input lana ka liya use karta ha<br><br><br><br>ak prompt Box bana laga ha jas ma hum user sa as ka number input kar na ko kaha ga</p>
+	<script>
+		var num=prompt("Enter your Numbers");
+		if(num >=80 && num <= 100){
+			document.write("your are in merit");
+		}else if(num >=60 && num < 80){
+			document.write("your are in 1 division");
+		}else if(num >=45 && num < 60){
+			document.write("your are in 2 division");
+		}else if(num >=30 && num < 45){
+			document.write("your are in 3 division");
+		}else if(num < 30){
+			document.write("your are fail");
+		}else{
+			document.write("plase enter vaild Numbers");
+		}
+	</script>
+</body>
+</html>

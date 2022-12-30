@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>querySelector and querySelectorAll</title>
+</head>
+<body>
+<h2>querySelector</h2>
+<p>as sa hum value get aro set kar skata ha aro as ma changing bi kar sakta ha ya srif first vali ko target karta ha</p>
+<div id="div">
+	<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente nam id nostrum esse! Illum unde obcaecati ea repellendus consequatur. Doloremque quaerat non provident quae ipsa earum at, consectetur incidunt explicabo!</p>
+</div>
+<script>
+	var a;
+	a = document.querySelector("#div").innerText = "Nauman";
+	console.log(a)
+</script>
+<div id="div1">
+	<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente nam id nostrum esse! Illum unde obcaecati ea repellendus consequatur. Doloremque quaerat non provident quae ipsa earum at, consectetur incidunt explicabo!</p>
+</div>
+<script>
+	var a;
+	a = document.querySelector("#div1").innerHTML = "<h1>Hello World</h1>";
+	console.log(a)
+</script>
+<h2>querySelectorAll</h2>
+<p>as sa hum value get aro set kar skata ha aro as ma changing bi kar sakta ha ya file ma sab tag ko target karta ha aro array banata ha</p>
+
+<div id="div">
+	<ul>
+		<li>a</li>
+		<li>b</li>
+		<li>c</li>
+		<li>d</li>
+	</ul>
+</div>
+<script>
+	var a;
+	a = document.querySelectorAll("li")[1].innerText = "ball";
+	console.log(a)
+</script>
+</body>
+</html>

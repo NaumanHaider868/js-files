@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Math Methods</title>
+</head>
+<body>
+	<h2>Math Methods</h2>
+	<p>an ka use animation ma hota ha ya web development ma counting ma <strong>kohi bi method ko use karna sa phala hum Math. ko use karta ha</strong></p>
+
+	<h4>Math Mathods</h4>
+
+	<ul>
+		<li>ceil(x)</li>
+		<li>floor(x)</li>
+		<li>round(x)</li>
+		<li>trunc(x)</li>
+		<li>max(x,y,z,...,n)</li>
+		<li>min(x,y,z,...,n)</li>
+		<li>sqrt(x)</li>
+		<li>cbrt(x)</li>
+		<li>pow(x)</li>
+		<li>random(x)</li>
+		<li>abs()</li>
+		<li>PI</li>
+	</ul>
+
+	<h2>ceil(x)</h2>
+
+	<p>as ma jo hum velue data ha ya hum ko as ka nazdik ki bari velue data ha</p>
+	<script>
+		var a = 8.05;
+
+		var b = Math.ceil(a)
+		document.write(b + "<br><br>")
+	</script>
+	<p>agar ap as ma - nagitive ma velue daga to ya nagitive ma nazdak ki chato velue daga</p>
+
+
+	<script>
+		var c = -1.45;
+		var d = Math.ceil(c);
+
+		document.write(d)
+	</script>
+
+	<h2>Floor(x)</h2>
+	<p>agar hum as ma 3.33 daga to ya hum ko as sa chota number daga</p>
+
+	<script>
+		var a = 3.33;
+
+		var b = Math.floor(a);
+
+		document.write(b)
+	</script>
+
+	<p>agar hum as ma nagitive ma velue daga to ya hum as sa bari velue daga</p>
+
+	<script>
+		var a = -3.33;
+		var b = Math.floor(a);
+
+		document.write(b)
+	</script>
+
+
+	<h2>round(x)</h2>
+	<p>jab hum as ma .49 sa bari velue daga to ya hum ko ko as sa bari velue daga agar ap na 0.49 sa choti velue di ha to ya hum ko as sa chotai velue daga</p>
+
+	<script>
+		var a = 1.49;
+		var b = Math.round(a);
+
+		document.write(b + "<br><br>")
+	</script>
+
+	<script>
+		var c = 2.49;
+		var d = Math.round(c);
+
+		document.write(d)
+	</script>
+
+
+	<h2>max(x,y,z,...,n)</h2>
+	<p>ap na max ma velues di ha ya ap ko as masa sab sa bari velue daga</p>
+
+	<script>
+		var a = Math.max(1,2,3,4,50,40,330);
+
+		document.write(a)
+	</script>
+
+	<h2>min(x,y,z,...,n)</h2>
+	<p>ap na min ma velues di ha ya ap ko as masa sab sa choti velue daga</p>
+
+	<script>
+		var a = Math.min(2,3,4,51,1);
+		document.write(a)
+	</script>
+
+
+	<h2>sqrt(x)</h2>
+	<p>agar ap ko 25 ka square lana ha to hum as ko use karta ha</p>
+
+	<script>
+		var a = 25;
+		var b = Math.sqrt(a);
+
+		document.write(b)
+	</script>
+
+
+	<h2>cbrt(x)</h2>
+	<p>ap janna chata ha ka 125 kas ka cqb ha to as ko use kara ga chack source code</p>
+
+	<script>
+		var a = 125;
+		var b = Math.cbrt(a);
+
+		document.write(b)
+	</script>
+
+	<h2>pow(x)</h2>
+	<p>as ko power of khata ha chack source code</p>
+
+	<script>
+		var a = Math.pow(2,3);
+		document.write(a)
+	</script>
+
+	<h2>random(x)</h2>
+	<p>ya ap ko do parameters ka darmaya number data ha</p>
+
+	<script>
+		var a = Math.floor(Math.random() * 90) + 1;
+		document.write(a)
+	</script>
+
+	<h2>abs(x)</h2>
+	<p>as ko absoluted kahta ha ya hum vohi velue daga jo hum na as ko di ha aro ya nagitive velue nahi data</p>
+
+	<script>
+		var a = Math.abs(34);
+		document.write(a + "<br><br>")
+	</script>
+	<script>
+		var a = Math.abs(34+2*2);
+		document.write(a)
+	</script>
+
+	<h2>PI</h2>
+	<p>ya hum pi ki velue data ha </p>
+
+	<script>
+		var a = Math.PI;
+		document.write(a)
+	</script>
+</body>
+</html>

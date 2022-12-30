@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>toString, velueOf and fill</title>
+</head>
+<body>
+<h2>toString</h2>
+<p>as ko hum array ko string ma chang karna ka liya use karta ha agar ap na array ko ak bar string ma chang kar diya to ap as par kohi array ka Method ko use nahi kar sakta<br>as ko lakna ka tarika<br>first par apna variable ka name dana ha variable ka nmae a ha a.toString();</p>
+
+<script>
+	var a = ["Nauman","Haider"]
+	a.toString();
+	document.write(a)
+</script>
+
+<h2>valueOf</h2>
+<p>as ko hum array ki velue ko print karna ka liya use karta ha ap arraay ki velue ko document.write() ma nbi print kar sakta ha</p>
+
+<script>
+	var a = ["nauman","haider"]
+	document.write(a.valueOf(a));
+</script>
+
+<h2>fill</h2>
+<p>agar ap ka pas ak var a = ["Nauman","Haider"]<br>ap as ma ap saim ko print karna chata ho<br> ak bat aro as ma ap ak sa zada velues ko print nahi kar sakta</p>
+
+<script>
+	var a = ["Nauman","Haider"]
+	document.write(a + "<br><br>");
+	a.fill("Saim","Ali");
+	document.write(a)
+</script>
+</body>
+</html>

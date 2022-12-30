@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Multidimesional Array</title>
+</head>
+<body>
+<h2>Multidimesional Array</h2>
+<p>as ka matlab ya ha ka ak array ka ander array ko Multidimesional array khata ha<br>hum na 4 array bana ha array ka 4 index aro har array ka 4 index ha<br>agar ap 1st array ka 2nd index ko call karna chta ha ko ya code lakha<br>
+<b>document.write(ary[0][0])</b></p>
+<script>
+	/*var ary = [
+		["Nauman","16","Male","BS(cs)"],		
+		["Dawood","17","Male","FA(it)"],
+		["Noman","16","Male","BS(cs)"],
+		["Ayyan","14","Male","BS"]
+	];
+	document.write(ary[0][0])
+	document.write(ary.length)
+	document.write("<table border='1px'; cellspacing='0'>")
+	for(var a = 0; a < 4; a++){
+		document.write("<tr>")
+		for(var b = 0; b < 4; b++){
+			document.write("<td>" + ary[a][b] + "</td> ")
+		}
+		document.write("</tr>")
+		document.write( "<br>")
+	}
+	document.write("</table>")*/
+
+
+	var ary = [
+	["Nauman", 16, "Male", "BS.c"],
+	["Dawood", 17, "Male", "BS.c"],
+	["Noman", 16, "Male", "BS.c"],
+	["Ayyan", 14, "Male", "BS(cs)"]
+	];
+	document.write(ary.length);
+	document.write("<table border= '1px' cellspacing='0'> ")
+	for(var a = 0; a < ary.length; a++){
+		document.write("<tr>")
+		for(var b = 0; b < 4; b++){
+		document.write("<td>" + ary[a][b] + " " + "</td>");
+		}
+		document.write("</tr>")
+		/*document.write("<br>")*/
+	}
+	document.write("</table>")
+
+</script>
+
+<h2>array li length janna ka liya ap .length ko use kara</h2>
+
+<script>
+	var ary = [
+	["Nauman", 16, "Male", "BS.c"],
+	["Dawood", 17, "Male", "BS.c"],
+	["Noman", 16, "Male", "BS.c"],
+	["Ayyan", 14, "Male", "BS(cs)"],
+	["Ayyan", 14, "Male", "BS(cs)"],
+	["Ayyan", 14, "Male", "BS(cs)"],
+	["Ayyan", 14, "Male", "BS(cs)"],
+	["Ayyan", 14, "Male", "BS(cs)"],
+	["Ayyan", 14, "Male", "BS(cs)"]
+	];
+
+	for(var a = 0; a<4; a++){
+		document.write(ary[a] + " " + "<br><br>")
+	}
+	document.write(ary.length)
+</script>
+</body>
+</html>

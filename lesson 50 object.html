@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Object</title>
+</head>
+<body>
+<h2>object array ki tarha kam karta ha array  ma index number hota ha lakin object ma properties hoti ha array ma hum [] ko use karta ha object ma hum {} ko use karta ha ap object ma array bana skta ha</h2>
+
+
+<script>
+	var a = {
+		fname : "Nauman",
+		lname : "Haider",
+		age : 17,
+		email : "naumanhaider868@gmil.com"
+	}
+	document.write(a.email)
+</script>
+<p>object ma array ka liya source code check kara<br><br>
+</p>
+<script>
+	var a = {
+		fname : "Nauman",
+		lname : "Haider",
+		age : 17,
+		email : "naumanhaider868@gmil.com",
+		array : ["Computer", "Laptop"]
+	}
+	document.write(a.array[1])
+</script>
+<p>hum object ma function bina sakta ha</p>
+<script>
+	var a = {
+		fname : "Nauman",
+		lname : "Haider",
+		age : 17,
+		email : "naumanhaider868@gmil.com",
+		array : ["Computer", "Laptop"],
+		salary : function(){
+			return 5000
+		}
+	}
+	document.write(a.salary())
+</script>
+<h3>hum raha pas ak object ha hum na as ma ak variable a bana ya aro as ka bad ak function ma hum na as ko call ki ha lakin ya print nahi ho raha as ka liya hum this ko use kara ga<br>check source code</h3>
+<script>
+	var a = {
+		fname : "Nauman",
+		lname : "Haider",
+		age : 17,
+		email : "naumanhaider868@gmil.com",
+		array : ["Computer", "Laptop"],
+		salary : function(){
+			return 5000
+		},
+		fullname : function(){
+			return this.fname + " " + this.lname
+		}
+	}
+	document.write(a.fullname())
+</script>
+
+<p>object ka ander object source code check kara</p>
+
+<script>
+	var a = {
+		fname : "Nauman",
+		lname : "Haider",
+		age : 17,
+		email : "naumanhaider868@gmil.com",
+		array : ["Computer", "Laptop"],
+		salary : function(){
+			return 5000
+		},
+		fullname : function(){
+			return this.fname + " " + this.lname
+		},
+		living : {
+			"city" : "Faisalabad",
+			"country" : "Pakistan"
+		}
+	}
+	document.write(a.living.city);
+	console.log(a)
+</script>
+</body>
+</html>

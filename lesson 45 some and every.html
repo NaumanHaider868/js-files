@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>some and every</title>
+</head>
+<body>
+	<h2>Some</h2>
+	<p>ap ka pas do variables ha to ap na check karna ha ka <br>var a = [12,15,19,20];<br>var b = 18;;<br>ap na dhakna ha ka 18 var a ma ha a nahi as ka liya hum some() ko uuse karta ha<br>some ma ager ak bi velue pass hoga ti ha to stetement run hogi<br>Check Source code</p>
+	<script>
+		var a = [12,13,14,15]
+		document.write(a + "<br><br>")
+		var b = a.some(name)
+		document.write(b)
+		function name(age){
+			return age >= 13;
+		}
+	</script><br><br><br>
+	<h2>Every</h2>
+	<p>Every ma agar  var a ki sab velues var b ki velues sa bari ho to ya run hoga<<br>jab variale a ki sab velues variable b sa barai hogi to stetement run hogi</p><br><br>
+	<script>
+		var ages = [20,21,22,23];
+		document.write(ages + "<br><br>");
+		var b = ages.every(name);
+		document.write(b)
+		function name(age){
+			return age >= 20;
+		}
+	</script><br><br><br>
+	<script>
+		var ages = [20,19,22,23];
+		document.write(ages + "<br><br>");
+		var b = ages.every(name);
+		document.write(b)
+		function name(age){
+			return age >= 20;
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript page</title>
+</head>
+<body>
+	<h2>console</h2>
+	<p>as ma har ak data ko print kar sakta ha</p>
+	<bold>(console.log)<br>ya console ki sab sa main comant ha as ma ap kuch bi kar sakta ha</bold>
+	<script>
+		var a=4;
+		console.log(a+4)
+	</script>
+	<script>
+		console.log([1,2,3])
+	</script>
+	<p><b>(console.table)</b><br>as ma hum array ko table ma print kar sakta ha</p>
+	<script>
+		console.table([1,2,3])
+	</script>
+	<p>(console.error)<br>user kas ko condition ma use karta ha taka error check kar saka lakin hum asa hi use kara ga</p>
+	<script>
+		console.error("something want wrong")
+	</script>
+	<p>(console.warn)<br>user as ko waring dana kaliya use karta ha</p>
+	<script>
+		console.warn("I warn you")
+	</script>
+	<p>(console.clear)<br>console ko clear karna ka liya clear use hoti ha</p>
+	<script>
+		/*console.warn("I warn you");
+		console.warn("I warn you");
+		console.warn("I warn you");
+		console.warn("I warn you");
+		console.warn("I warn you");
+		console.clear();*/
+	</script>
+	<p>console.time<br>ya time check karna ka liya use hoti ha ka statement ko run hona ma kitna time laga<br>as ko statement ka start ho sa console.time() pahalia aro statement ka end hona ka bad console.timeEnd()</p>
+	<script>
+	console.time();
+		console.warn("I warn you");
+		console.warn("I warn you");
+		console.warn("I warn you");
+		console.warn("I warn you");
+		console.warn("I warn you");
+	console.timeEnd();
+	</script>
+	<h1 id="main">Nauman</h1>
+	<p>getelementbyId<br>as sa hum html ma mojad kohi bi id ko console.getElementbyId("main"); ko dhak sakta ha</p>
+	<script>
+		document.getElementById('main')
+	</script>
+	<h2>.innerHtml<br>as hum element ki html check kar sakta ha</h2>
+	<h2>.innertext<br>as sa hum element ka ander ka text check kar sakta ha</h2>
+</body>
+</html>

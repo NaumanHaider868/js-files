@@ -1,0 +1,25 @@
+#clear{
+	width: 248px;
+	height: 40px;
+	background: blue;
+	color: #fff;
+}
+.formstyle{
+ 	width: 330px;
+	height: 255px;
+	margin: auto;
+	margin-top: 150px;
+;
+}
+input{
+	width: 80px;
+	background-color: blue;
+	color: #fff;
+}
+#answerstyle{
+	width: 244px;
+	height: 40px;
+}
+#value{
+	font-size: 2em;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>isArray</title>
+</head>
+<body>
+<h2>isArray</h2>
+<p>as ko hum as liya use karta ha ta ka check kar saka ka ya array ha ka nai <br>as ko lakna ka tarika <b>Array.isArray()</b></p>
+<script>
+	var a = ["Nauman","Haider"]
+	a.isArray();
+	document.write(a)
+</script>
+<script>
+	var a = ["Nauman","Ayyan","Daim","Saim"]
+	document.write(a + "<br><br>")
+	var b = Array.isArray(a);
+	document.write(b + "<br><br>")
+</script>
+
+ <script>
+	var a = [Nauman];
+	document.write(a + "<br><br>")
+	if(Array.isArray(a)){
+		document.write("This is an array")
+	}else{
+		document.write("This is not an array")
+	}
+</script>
+
+</body>
+</html>

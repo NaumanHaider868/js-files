@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>dom set value</title>
+</head>
+<body>
+<h1>DOM Set Value Page</h1>
+<h2>chack console.log</h2>
+
+<div id="div">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est laboriosam, dolore quas.</p>
+</div>
+
+<script>
+	var a;
+	a = document.getElementById("div").innerText = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus nihil iste vero?"
+	console.log(a);
+</script>
+<div id="div1">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est laboriosam, dolore quas.</p>
+</div>
+<script>
+	var b;
+	b = document.getElementById("div1").innerHTML = "<h1>Nauman</h1>";
+	console.log(b)
+</script>
+
+<div style="background-color: red; color: #fff; font-family: 'poppins', sans-serif; text-align: center;"><h1>before changing</h1></div>
+
+<div id="div2" style="background-color: red; color: #fff; margin-top: 20px; font-family: 'poppins', sans-serif; text-align: center;"><h1>after changing with javascript</h1></div>
+
+<script>
+	var a;
+	a = document.getElementById("div2").setAttribute("style", "border: 1px solid black")
+	console.log(a)
+</script>
+<div id="div3" class="paragrapg-style" style="background-color: red; color: #fff; margin-top: 20px; font-family: 'poppins', sans-serif; text-align: center;"><h1>This changing with attibutes help with javascript</h1></div>
+
+<script>
+	var a;
+	a = document.getElementById("div3").attributes[1].value = "xyz"
+	console.log(a)
+</script>
+
+<div id="div4" class="paragrapg-style" style="background-color: red; color: #fff; margin-top: 20px; font-family: 'poppins', sans-serif; text-align: center;"><h1>This changing use to remove attribute</h1></div>
+
+<script>
+	var a;
+	a = document.getElementById("div4").removeAttribute("style")
+	console.log(a)
+</script>
+
+<style type="text/css">
+	.xyz{
+		background: red;
+	}
+</style>
+</body>
+</html>

@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>String Methods</title>
+</head>
+<body>
+<h2>String Methods</h2>
+<ul>
+	<li style="background: green; width: 5%; color: white;">length</li>
+	<li style="background: green; width: 5%; color: white;">toLowerCase()</li>
+	<li style="background: green; width: 5%; color: white;">toUpperCase()</li>
+	<li style="background: green; width: 5%; color: white;">includes()</li>
+	<li style="background: green; width: 5%; color: white;">startsWith()</li>
+	<li style="background: green; width: 5%; color: white;">endsWith()</li>
+	<li style="background: green; width: 5%; color: white;">search()</li>
+	<li style="background: green; width: 5%; color: white;">match()</li>
+	<li style="background: green; width: 5%; color: white;">indexOf()</li>
+	<li style="background: green; width: 5%; color: white;">lastIndexOf()</li>
+	<li style="background: green; width: 5%; color: white;">replace()</li>
+	<li style="background: green; width: 5%; color: white;">trim()</li>
+	<li>charAt()</li>
+	<li>charCodeAt()</li>
+	<li>fromCharCode()</li>
+	<li>concat()</li>
+	<li>split()</li>
+	<li>repeat()</li>
+	<li>slice()</li>
+	<li>substr()</li>
+	<li>substring()</li>
+	<li>toString()</li>
+	<li>valueOf()</li>
+</ul>
+
+
+<h2>length</h2>
+<p>as ko hum apna string ki lenght chek karna ka liya use karta ha ka as ma katna words ha aro ya space ko bi add karti ha</p>
+
+<script>
+	var str = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas sequi impedit inventore asperiores porro, architecto nobis corporis a molestiae? Eaque, libero quae debitis consequuntur cupiditate, perspiciatis nemo nulla quod sit!";
+	document.write(str + "<br><br>");
+	var a = str.length;
+	document.write(a)
+</script>
+
+<h2>toLowerCase()</h2>
+<p>as sa ap ka string lower case ma chang ho jaga jab as ko call karni ha to as ka aga () lagani ha as liya ka ya function ha</p>
+<script>
+	var a = "Nauman Haider";
+	document.write(a + "<br><br>");
+	var b = a.toLowerCase();
+	document.write(b)
+</script>
+
+<h2>toUpperCase()</h2>
+<p>as sa ap ka string Upper case ma chang ho jaga jab as ko call karni ha to as ka aga () lagani ha as liya ka ya function ha</p>
+<script>
+	var a = "nauman haider";
+	document.write(a + "<br><br>");
+	var b = a.toUpperCase();
+	document.write(b)
+</script>
+
+<h2>includes()</h2>
+<p>as ko hum apna string ma kohi word ko search karna ka liya use karta ha aga as ko vo word mil jata ha to ya hum ko true ma ans data ha</p>
+
+
+<script>
+	var a = "Hello Nauman";
+	document.write(a + "<br><br>");
+	var b = a.includes("Hello");
+	document.write(b)
+</script>
+
+<p>agar ap as ma abc ko check karna shata ha to ya vo bi kar sakta ha</p>
+<script>
+	var a = "Hello Nauman";
+	document.write(a + "<br><br>");
+	var b = a.includes("el");
+	document.write(b)
+</script>
+
+<h2>startsWith()</h2>
+<p>as ko hum ya ckeck karna ka liya use karta ha ka sring ka first word match ho raha ha ka nai</p>
+
+<script>
+	var a = "Hello Nauman";
+	document.write(a + "<br><br>");
+	var b = a.startsWith("H")
+	document.write(b)
+</script>
+
+<h2>endsWith()</h2>
+<p>as ko hum ya ckeck karna ka liya use karta ha ka sring ka last word match ho raha ha ka nai</p>
+
+<script>
+	var a = "Hello Nauman";
+	document.write(a + "<br><br>");
+	var b = a.endsWith("n")
+	document.write(b)
+</script>
+
+
+<h2>search</h2>
+<p>as ma hum kohi word search karta ha to ya hum ko as ki position send karta ha</p>
+
+<script>
+	var a = 'Hello EveryOne';
+	document.write(a + "<br><br>");
+	var b = a.search('o');
+	document.write(b)
+</script>
+
+<h2>match</h2>
+<p>as ko hum kohi word match karna ka liya use karta ha ka vo word as string ma ha ka nahi ya as ka ak new array bana da ga as ko lakna ka liya hum 2 // ko use karta ha as ko asa lakta ha<b>/i/</b>agar ap as ko simple as hi lak do ga ya as ko ak bar print kara ga lakin jab ap as ka end par g lagata ha to y bar bar search karta ha <b>g ka matlab ha golbal</b></p>
+
+<script>
+	var a = "I dont like javascript javascript javascript";
+	document.write(a + "<br><br>");
+	var b = a.match(/javascript/g);
+	document.write(b)
+</script>
+
+<h2>inderOf</h2>
+<p>hum kohi word ko search karta ha to ya hum ko as ka index number send karta ha jo phala word match hoga as ka index daga</p>
+<script>
+	var a = "Hello World Hello";
+	document.write(a + "<br><br>");
+	var b = a.indexOf("Hello");
+	document.write(b)
+</script>
+
+<h2>lastInderOf</h2>
+<p>jab hum as ko usse karta ha to  ya variable ma end vali stetement as starting karta ha</p>
+<script>
+	var a = "Javascript is JavsScript";
+	document.write(a + "<br><br>");
+	var b = a.lastIndexOf("JavsScript");
+	document.write(b)
+</script>
+
+<h2>replace</h2>
+<p>as ko hum  kohi word ko replace karna ka liya use karta ha ap 2 word ko ak word sa bi replace kar sakata ha</p>
+<script>
+	var a = "This is my computer";
+	document.write(a + "<br><br>");
+	var b = a.replace("my", "your");
+	document.write(b)
+</script>
+
+<br><br><b>as ma hum do word ko chang kar sakta ha Check Source Code</b><br><br>
+<script>
+	var a = "My name is Nauman is";
+	document.write(a + "<br><br>");
+	var b = a.replace(/is/g, ".");
+	document.write(b)
+</script>
+
+<h2>trim</h2>
+<p>as ko hum  left ya right side sa space ko khatam karna ka liya use karta ha</p>
+
+<script>
+	var a = "     Nauman      ";
+	var b = a.trim();
+	alert(b)
+</script>
+</body>
+</html>

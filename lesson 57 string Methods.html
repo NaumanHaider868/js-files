@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>charAt</title>
+</head>
+<body>
+	<h2>String Methods part 2</h2>
+<ul>
+	<li style="background: green; width: 5%; color: white;">length</li>
+	<li style="background: green; width: 5%; color: white;">toLowerCase()</li>
+	<li style="background: green; width: 5%; color: white;">toUpperCase()</li>
+	<li style="background: green; width: 5%; color: white;">includes()</li>
+	<li style="background: green; width: 5%; color: white;">startsWith()</li>
+	<li style="background: green; width: 5%; color: white;">endsWith()</li>
+	<li style="background: green; width: 5%; color: white;">search()</li>
+	<li style="background: green; width: 5%; color: white;">match()</li>
+	<li style="background: green; width: 5%; color: white;">indexOf()</li>
+	<li style="background: green; width: 5%; color: white;">lastIndexOf()</li>
+	<li style="background: green; width: 5%; color: white;">replace()</li>
+	<li style="background: green; width: 5%; color: white;">trim()</li>
+	<li style="background: green; width: 5%; color: white;">charAt()</li>
+	<li style="background: green; width: 5%; color: white;">charCodeAt()</li>
+	<li style="background: green; width: 5%; color: white;">fromCharCode()</li>
+	<li style="background: green; width: 5%; color: white;">concat()</li>
+	<li style="background: green; width: 5%; color: white;">split()</li>
+	<li style="background: green; width: 5%; color: white;">repeat()</li>
+	<li style="background: green; width: 5%; color: white;">slice()</li>
+	<li style="background: green; width: 5%; color: white;">substr()</li>
+	<li style="background: green; width: 5%; color: white;">substring()</li>
+	<li style="background: green; width: 5%; color: white;">toString()</li>
+	<li style="background: green; width: 5%; color: white;">valueOf()</li>
+</ul>
+<h2>charAt()</h2>
+<p>as ma hum ak position number adta ha aro as position par jo word hota ha ya hum ko vo return kar data ha<br>Check source code</p>
+
+<script>
+	var a = "Hello Nauman Haider";
+	document.write(a + "<br><br>");
+	var b = a.charAt(2);
+	document.write(b)
+</script>
+<h2>charCodeAt()</h2>
+<p>as ko as liya use karta ha ka ak variable ma ap ka ps string ha ap position 3 par jo word ha ap as ka charCode daga</p>
+<script>
+	var a = "Nauman";
+	document.write(a + "<br><br>");
+	var b = a.charCodeAt(3);
+	document.write(b)
+</script>
+
+<h2>formCharCode()</h2>
+<p>as ma hum ak number data ha to ya hum ko sa ka sumbles send karta ha</p>
+
+<script>
+	var b = String.fromCharCode(190);
+	document.write(b);
+</script>
+
+<h2>concat()</h2>
+<p>as hum do string ko akata kar ka print karna ka liya use karta ha</p>
+<script>
+	var a = "Nauman";
+	var b = "Haider";
+	var c = a.concat(b);
+	document.write(c)
+</script>
+
+<h2>split</h2>
+<p>jab ap apna string ko split karta ha to jah sa ap na split kiya hota ha ya vaha par array bana data ha<br>
+Check source code</p>
+
+<script>
+	var a = "Lorem ipsum dolor sit."
+	var b = a.split(" ");
+	document.write(b)
+</script>
+
+<h2>repeat()</h2>
+<p>as ko hum apna string ko repeat karna ka liya use karta ha</p>
+
+<script>
+	var a = "Nauman Haider";
+	var b = a.repeat(3);
+	document.write(b)
+</script>
+
+<h2>slice()</h2>
+<p>as ko hum apna variable ma sa kohi word ko atahana ka liya use karta ha</p>
+<script>
+	var a = "Hello Nauman Haider";
+	var b = a.slice(1);
+	document.write(b)
+</script>
+<p>as na phala vala word chad kar baki ka sara string print kar diya</p><br><br><br>
+<h2>substr()</h2>
+<p>slice ki tarha kam karta ha bas as ma ya chang ha hum as ma starting point aro ending point da ta ha hum starting point 3 diya aro ending point 5 diya to ya position 3 sa start kara ga aro as ka bad 5 word aro la ga</p>
+<script>
+	var a = "Hello Nauman Haider";
+	var b = a.substr(3,8);
+	document.write(b)
+</script>
+
+<h2>substring()</h2>
+<p>ya bi substr ki tarha ha bas as mo jo hum ending point data ha ya as sa ak index kam print karta ha</p>
+<script>
+	var a = "Hello Nauman Haider";
+	var b = a.substring(2,8);
+	document.write(b)
+</script>
+<h2>toString()</h2>
+<p>as sa hum kasi bi type ko string ma chang kar sakta ha</p>
+<script>
+	var a = 32;
+	var b = a.toString();
+	document.write(b)
+</script>
+<p>ab ya string ha check source code</p>
+<script>
+	var a = 32;
+	var b = a.toString();
+	document.write(b + 22)
+</script>
+<h2>velueOf</h2>
+<p>as ko hum string ko print karna ka liy ause karta ha hum string ko as hi printt kar sakta ha<b>as ko sada use nahi karta</b></p>
+<script>
+	var a = "Nauman";
+	var b = a.velueOf();
+	document.write(b)
+</script>
+</body>
+</html>

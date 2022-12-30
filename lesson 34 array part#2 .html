@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Array</title>
+</head>
+<body>
+<h2>New Array</h2>
+<p>array part # 2 ma hum array ki velue ko ak new tarika sa lakha ga ya tarika new array sa jana jata ha as ma hum sa ko bata ha ka as ma katni velue store hogi</p>
+<script>
+	var ary = new Array(3);
+	for(var g= 0; g < 3; g++){
+		ary[g] = prompt("Enter Array Velue: ")
+	}
+	document.write("<ul>")
+	for(var a = 0; a <= 2; a++){
+		console.log(ary);
+		document.write("<li>" + ary[a] + "</li>")
+	}
+		document.write("</ul>")
+</script>
+</body>
+</html>

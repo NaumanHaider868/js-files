@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Number Methods</title>
+</head>
+<body>
+<ul>
+	<li>Number()</li>
+	<li>parseInt()</li>
+	<li>parseFloat()</li>
+	<li>inFinite()</li>
+	<li>isInteger()</li>
+	<li>toFixed()</li>
+	<li>toPrecision()</li>
+</ul>
+
+<h4>Number()</h4>
+<p>ya kasi bi string ya kohi aro velue ko number ma chang kar sakta ha</p>
+<script>
+	var a = "10";
+	document.write("this is string " + a +"<br><br>")
+	var b = Number(a);
+	document.write("This is number" + b)
+</script>
+<!-- <script>
+	var a = "10";
+	var b = Number(a);
+	document.write(b);
+	document.write(typeof b)
+</script> -->
+
+<h4>parseInt()</h4>
+<p>ya string ko dasimal ma chang karta ha</p>
+<script>
+	var a = "45.5"
+	document.write("This is dasimal number" + a + "<br><br>");
+
+	var b =parseInt(a);
+	document.write("this is dasimal number. " + b)
+</script>
+
+<h4>parseFloat()</h4>
+<p>as ma aro parseInt ma ak chang ha ya hum ko <h3>.</h3> bi return karti ha</p>
+
+<script>
+	var a = "45.0560";
+
+	document.write("This is dasimal number. " + a + "<br><br>");
+
+	var b =parseFloat(a);
+
+	document.write("this is parseFloat. " + b)
+
+</script>
+
+<h4>isFinite()</h4>
+<p>hum as ma number daga to ya true daga agar number "" ma hoga to ya true daga ya number ko check karta ha
+</p>
+
+<script>
+	var a = "100";
+
+	document.write("This is string. " + a);
+
+	var b = isFinite(a);
+
+	document.write " " + (b)
+</script>
+
+<h4>inTnteger()</h4>
+ <p>as ma hum number data ha to ya true data ha aro string ko flase data ha <strong>Number.isInteger(a);</strong></p>
+
+<script>
+	var a = 100;
+
+	document.write("This is Number" + a);
+
+	var b = Number.isInteger(a);
+
+	document.write(" " + b)
+</script>
+
+<h4>toFixed</h4>
+<p>agar ap ka pas 5.123456789 ha ap 4 tak print karna chata to as ko use kara ga</p>
+
+<script>
+	var a = 3.4444;
+	document.write(a + "<br><br>");
+	var b = a.toFixed(3);
+	document.write(b)
+</script>
+</body>
+</html>

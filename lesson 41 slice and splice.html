@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>slice and splice</title>
+</head>
+<body>
+<h2>slice</h2>
+<p>slice hum as ko array ma sa kisi bi velue ko print karna ka liya use karta ha<br>Cheeck Source code<br>jb ap nai ak velue ko print karna ha to apna array ka starting index lakna ha aro jon si velue ap na print karni ha as sa phala vala index number lakna ha<br><br><br>Example:<br>["Nauman","Ayyan","Daim","Saim","Dawood","Noman"]<br>ap na ayyan sa a kar Dawood tak print karna ha to ap lakha ga<br><br><br>var a = ["Nauman","Ayyan","Daim","Saim","Dawood","Noman"]
+	<br>document.write(a )
+	<br>var b = a.slice(1,4)
+	<br>document.write(b)<br><br><br></p>
+<script>
+	var a = ["Nauman","Ayyan","Daim","Saim","Dawood","Noman"]
+	document.write(a + "<br><br>")
+	var b = a.slice(1,4)
+	document.write(b)
+</script>
+<br><br><script>
+	var a = ["Nauman","Ayyan","Daim","Saim","Dawood","Noman"]
+	document.write(a + "<br><br>")
+	var b = a.slice(5)
+	document.write(b)
+</script>
+<p>agar ap slice ki velue ko Nagative ma data ho to ya right side sa start hogi right side par jo velue hogi ya as ko -1  kaha gi<br>Check Source code</p>
+<script>
+	var a = ["Ayyan","Daim","Saim","Dawood","Noman"]
+	document.write(a + "<br><br>")
+	var b = a.slice(-3)
+	document.write(b)
+</script>
+<br><br>
+<h2>splice</h2>
+<p>as ko hum ak velue ko over write karna ka liya use karta ha<br><br><b>as ko lakna ka tarika<br>a.splice(index,how many velue delete,"new velue")<br>a.splice(1,0,"Nauman","Haider")</b>index ka matlab ha kas index sa start karna ha How many delete ka matlab ha ka jas index number sa start ing ho rahi ha as ka bad katni velue ko delete karna ha</p>
+<script>
+	var a = ["Ayyan","Daim","Saim","Dawood","Noman"]
+	document.write(a + "<br><br>")
+	a.splice(4,1,"Nauman")
+	document.write(a)
+</script>
+
+<!-- <script>
+	var  a = ["Hello","Nauman","Haider"]
+	document.write(a + "<br><br>");
+	a.splice(2,1,"jani");
+	document.write(a)
+</script> -->
+</body>
+</html>

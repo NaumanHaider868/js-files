@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>text</title>
+</head>
+<body>
+
+	<h1>check console.log</h1>
+	<h2>dom get value page</h2>
+	<div id="div" class="paragraph" style="background: #ccc;">
+  		<p id="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis voluptatibus enim tenetur.</p>
+  	</div>
+  	<script>
+  		var a;
+  		var b;
+  		var c;
+  		var d;
+  		a = document.getElementById("div").innerHTML;
+  		b = document.getElementById("div").innerText;
+  		c = document.getElementById("div").getAttribute("style")
+  		console.log(a,b);
+  		console.log(c);
+  		d = document.getElementById("div").getAttributeNode("style");
+  		console.log(d);
+  		var e;
+  		e = document.getElementById("div").getAttributeNode("style").value;
+  		console.log(e)
+  		var f;
+  		f = document.getElementById("div").attributes[1].name;
+  		console.log(f)
+  	</script>
+</body>
+</html>
